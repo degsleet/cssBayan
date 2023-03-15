@@ -16,6 +16,9 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
+.bayan__title {
+    margin-bottom: 9px;
+}
 
 .bayan__row {
     color: #8a2be8;
@@ -25,4 +28,66 @@
 .bayan__row:hover {
     color: #000000;
     cursor: pointer;
+}
+
+.row__body {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: block;
+}
+
+.bayan__row .row__body {
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.bayan__row label {
+    display: block;
+    margin: 9px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.bayan__row input:checked + label + .row__body {
+    height: auto;
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.bayan__row input:checked + label {
+    color: #000000;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-plus, .fa-xmark {
+    opacity: 0;
+}
+
+.bayan__row:hover .fa-plus {
+    opacity: 1;
+    display: inline;
+}
+
+.bayan__row:hover .fa-xmark {
+    display: none;
+}
+
+.bayan__row:hover input:checked + label .fa-xmark {
+    opacity:1;
+    display: inline;
+}
+.bayan__row:hover input:checked + label .fa-plus {
+    display: none;
 }
