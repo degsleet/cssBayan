@@ -16,3 +16,13 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
+
+.bayan__row {
+    color: #8a2be8;
+    font-size: 16px;
+}
+
+.bayan__row:hover {
+    color: #000000;
+    cursor: pointer;
+}
